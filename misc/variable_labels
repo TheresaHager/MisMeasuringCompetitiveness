@@ -1,0 +1,420 @@
+labelled::var_label(macro_data)
+$iso3c
+NULL
+
+$year
+NULL
+
+$NEER_EA19
+[1] "Nominal Effective Exchange Rate, relative against Euro Area (2010=100)"
+
+$RGDP_EA19
+[1] "Price deflator GDP, market prices (?), relative against Euro Area (2010=100)"
+
+$RHICP_EA19
+[1] "Price deflator HICP / CPI, relative against Euro Area (2010=100)"
+
+$RULC_EA19
+[1] "Relative Unit Labor Costs, relative against Euro Area (2010=100)"
+
+$RXPI_EA19
+[1] "Price deflator exports of goods/services, relative against Euro Area (2010=100)"
+
+$NEER_EU27
+[1] "Nominal Effective Exchange Rate, relative against European Union of the 27 (2010=100)"
+
+$RGDP_EU27
+[1] "Price deflator GDP, market prices (?), relative against European Union of the 27 (2010=100)"
+
+$RHICP_EU27
+[1] "Price deflator HICP / CPI, relative against European Union of the 27 (2010=100)"
+
+$RULC_EU27
+[1] "Relative Unit Labor Costs, relative against European Union of the 27 (2010=100)"
+
+$RXPI_EU27
+[1] "Price deflator exports of goods/services, relative against European Union of the 27 (2010=100)"
+
+$NEER_IC37
+[1] "Nominal Effective Exchange Rate, relative against IC37 group (2010=100)"
+
+$RGDP_IC37
+[1] "Price deflator GDP, market prices (?), relative against IC37 group (2010=100)"
+
+$RHICP_IC37
+[1] "Price deflator HICP / CPI, relative against IC37 group (2010=100)"
+
+$RULC_IC37
+[1] "Relative Unit Labor Costs, relative against IC37 group (2010=100)"
+
+$RXPI_IC37
+[1] "Price deflator exports of goods/services, relative against IC37 group (2010=100)"
+
+$NEER_Gr42
+[1] "Nominal Effective Exchange Rate, relative against Gr42 group (2010=100)"
+
+$RGDP_Gr42
+[1] "Price deflator GDP, market prices (?), relative against Gr42 group (2010=100)"
+
+$RHICP_Gr42
+[1] "Price deflator HICP / CPI, relative against Gr42 group (2010=100)"
+
+$loans
+[1] "Gross non-performing loans, domestic and foreign entities - % of gross loans"
+
+$banking_leverage
+[1] "Consolidated banking leverage, domestic and foreign entities (asset-to-equity multiple)"
+
+$current_account_avg3y
+[1] "Current account balance - % of GDP, 3 years average"
+
+$direct_investment_stocks
+[1] "Direct investment in the reporting economy (stocks) - % of GDP"
+
+$current_account
+[1] "Current account balance - % of GDP"
+
+$export_oecd_5ychange
+[1] "Share of OECD export - 5 years % change"
+
+$lending_borrowing
+[1] "Net Lending / Borrowing - % of GDP"
+
+$direct_investment_flows
+[1] "Direct investment in the reporting economy (flows) - % of GDP"
+
+$trade_balance_energy
+[1] "Net trade balance of energy products - % of GDP"
+
+$REER_42tp_change1y
+[1] "Real effective exchange rate, 42 trading partners - 1 year % change"
+
+$REER_42tp_change3y
+[1] "Real effective exchange rate, 42 trading partners - 3 years % change"
+
+$REER_euro_change3y
+[1] "Real effective exchange rate, euro area trading partners - 3 years % change"
+
+$export_shares_change5y
+[1] "Export market shares - 5 years % change"
+
+$export_shares_change1y
+[1] "Export market shares - 1 year % change"
+
+$export_shares_vol_change1y
+[1] "Export market share, volumes - 1 year % change"
+
+$finance_liabs_ch1y
+[1] "Total financial sector liabilities, non-consolidated - 1 year % change"
+
+$finance_liabs_mio
+[1] "Total financial sector liabilities, non-consolidated - million of national currency"
+
+$debt_gov
+[1] "General government sector debt - % of GDP"
+
+$house_prices_real_ch1y
+[1] "House price index, deflated - 1 year % change"
+
+$house_prices_nom_ch3y
+[1] "Nominal house price index - 3 years % change"
+
+$int_inv_pos
+[1] "Net international investment position - % of GDP"
+
+$int_inv_pos_adj
+[1] "Net international investment position excluding non-defaultable instruments - % of GDP"
+
+$poverty_risk_perc
+[1] "People at risk of poverty or social exclusion - % of total population"
+
+$poverty_risk_ch3y
+[1] "People at risk of poverty or social exclusion - % of total population, % point change (t, t-3)"
+
+$povery_risk_post_transfer_perc
+[1] "People at risk of poverty after social transferes - % of total population"
+
+$povery_risk_post_transfer_perc_ch3y
+[1] "People at risk of poverty after social transferes - % of total population, % point change (t, t-3)"
+
+$deprived_perc
+[1] "Severely materially deprived people - % of total population"
+
+$deprived_perc_ch3y
+[1] "Severely materially deprived people - % of total population, % point change (t, t-3)"
+
+$low_work_perc
+[1] "People living in households with very low work Intensity - % of population aged 0-59"
+
+$low_work_perc_ch3y
+[1] "People living in households with very low work intensity - % of population aged 0-59, % point change (t, t-3)"
+
+$ulc_ch3y
+[1] "Nominal unit labour cost index - 3 years % change"
+
+$ulc_ch1y
+[1] "Nominal unit labour cost index - 1 year % change"
+
+$ulc_perf_eu_ch10y
+[1] "Unit labour cost performance relative to euro area - 10 years % change"
+
+$activity_rate_perc
+[1] "Activity rate (15-64 years) - % of the total population of the same age group"
+
+$activity_rate_perc_ch3y
+[1] "Activity rate (15-64 years) - % point change (t, t-3)"
+
+$unemp_long_perc
+[1] "Long-term unemployment rate - % of active population in the same age group"
+
+$unemp_long_perc_ch3y
+[1] "Long-term unemployment rate - % of active population in the same age group, % point change (t, t-3)"
+
+$unemp_youth_perc
+[1] "Youth unemployment rate - % of active population in the same age group"
+
+$unemp_youth_ch3y
+[1] "Youth unemployment rate - % of active population in the same age group, % point change (t, t-3)"
+
+$neet_youth_perc
+[1] "Young people neither in employment nor in education and training - % of total population"
+
+$neet_youth_perc_ch3y
+[1] "Young people neither in employment nor in education and training - % of total population, % point change (t, t-3)"
+
+$gdp_real_ch1y
+[1] "Real gross domestic product (GDP) - 1 year % change"
+
+$cap_formation
+[1] "Gross fixed capital formation - % of GDP"
+
+$tot_ch5y
+[1] "Terms of trade - 5 years % change"
+
+$construction
+[1] "Residential construction - % of GDP"
+
+$employment_ch1y
+[1] "Employment - 1 year % change"
+
+$productitivy_labor
+[1] "Labour productivity - 1 year % change"
+
+$credit_priv_flow
+[1] "Private sector credit flow, consolidated - % of GDP"
+
+$debt_priv
+[1] "Private sector debt, consolidated - % of GDP"
+
+$debt_households
+[1] "Household debt, consolidated including Non-profit institutions serving households - % of GDP"
+
+$rd_exp
+[1] "Gross domestic expenditure on R&D - % of GDP"
+
+$unemp_avg3y
+[1] "Unemployment rate - 3 years average"
+
+$unemp_rate
+[1] "Unemployment rate - %"
+
+$finance_debt_to_equity
+[1] "Financial sector leverage (debt-to-equity) - %"
+
+$debt_external
+[1] "Net external debt - % of GDP"
+
+$ulc_ch10y
+[1] "Nominal unit labour cost index - 10 years % change"
+
+$debt_priv_perc
+[1] "Private sector debt, non-consolidated - % of GDP"
+
+$credit_flow_priv
+[1] "Private sector credit flow, non-consolidated - % of GDP"
+
+$gini_post
+NULL
+
+$gini_post_se
+NULL
+
+$gini_pre
+NULL
+
+$gini_pre_se
+NULL
+
+$gini_abs_red
+NULL
+
+$gini_abs_red_se
+NULL
+
+$gini_rel_red
+NULL
+
+$gini_red_red_se
+NULL
+
+$MIP_status
+[1] "Status in MIP; own indicator"
+
+$SGP_compliance
+[1] "Compliance with SGP; own indicator"
+
+$SGP_edp
+[1] "Compliance with SGP 2; own indicator"
+
+$fdi_net_inflow_GDP
+NULL
+
+$fdi_net_outflow_GDP
+NULL
+
+$tax_rev_total_GDP
+NULL
+
+$tax_rev_trade_TAX
+NULL
+
+$tax_rev_inc_profits_TAX
+NULL
+
+$trade_total_GDP
+NULL
+
+$trade_exp_GDP
+NULL
+
+$trade_imp_GDP
+NULL
+
+$RD_expend_GDP
+NULL
+
+$RD_scientists
+NULL
+
+$wgi_accountability
+NULL
+
+$wgi_regul_quality
+NULL
+
+$wgi_rule_of_law
+NULL
+
+$wgi_pol_stability
+NULL
+
+$wgi_gov_effectvn
+NULL
+
+$wgi_control_corrupt
+NULL
+
+$empl_ind
+NULL
+
+$empl_agr
+NULL
+
+$empl_serv
+NULL
+
+$empl_self
+NULL
+
+$unemp_youth_neet
+NULL
+
+$VA_industry_gdp
+NULL
+
+$VA_manufct_gdp
+NULL
+
+$current_account_GDP_WB
+NULL
+
+$population
+NULL
+
+$res_rents
+NULL
+
+$gdp_real_lcu
+NULL
+
+$gdp_real_lcu_growth
+NULL
+
+$gdp_real_pc_lcu
+NULL
+
+$gdp_real_pc_lcu_growth
+NULL
+
+$gdp_real_usd
+NULL
+
+$gdp_real_pc_usd
+NULL
+
+$gdp_nom_lcu
+NULL
+
+$gdp_nom_pc_lcu
+NULL
+
+$gdp_nom_usd
+NULL
+
+$gdp_nom_pc_usd
+NULL
+
+$gdp_real_ppp
+NULL
+
+$gdp_real_pc_ppp
+NULL
+
+$gdp_nom_ppp
+NULL
+
+$gdp_nom_pc_ppp
+NULL
+
+$unemp_rate_wb
+NULL
+
+$labor_force_total
+NULL
+
+$cpi_wb
+NULL
+
+$cpi_change_wb
+NULL
+
+$interest_real
+NULL
+
+$AIS_mean
+[1] "The mean implementation score for the country in this year"
+
+$AIS_mean_MIP
+[1] "Same as AIS_mean, but only for scores with MIP as the legal basis"
+
+$AIS_mean_SGP
+[1] "Same as AIS_mean, but only for scores with SGP as the legal basis"
+
+$AIS_mean_Integrated
+[1] "Same as AIS_mean, but only for scores with Integrated as the legal basis"
+
+$AIS_mean_SGP_MIP
+[1] "Same as AIS_mean, but only for scores with SGP/MIP as the legal basis"
+
+$country_group_jee
+NULL

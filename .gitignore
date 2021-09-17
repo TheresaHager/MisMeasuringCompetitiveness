@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*~
+markdown/preamble.pdf
+markdown/*.log
+markdown/.texpadtmp/
+markdown/MisMeasuringCompetitiveness*.pdf
+markdown/figures/*.pdf
+data/raw/CSRs_policy_area_conf.xlsx
+data/raw/CSRs_policy_area_conf.csv
+output/min_max_tansitions.Rdata
+output/*.pdf
+

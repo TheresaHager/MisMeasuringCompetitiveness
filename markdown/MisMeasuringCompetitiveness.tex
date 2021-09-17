@@ -1,0 +1,1054 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+%\documentclass{article}
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{array}       % for more column options in tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{amsmath}
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{placeins} % To get command \FloatBarrier
+\usepackage{lipsum}
+\usepackage{booktabs}
+%\usepackage[table]{xcolor}
+%\definecolor{NiceBlue}{RGB}{0, 76, 147}
+%\definecolor{NiceRed}{RGB}{255, 26, 26}
+%\definecolor{NiceGreen}{RGB}{41, 163, 41}
+%\definecolor{NiceYellow}{RGB}{230, 153, 0}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = {blue},
+    citecolor = {blue},
+    urlcolor = {blue}
+    }
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[autostyle]{csquotes}
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{multirow, subfig}
+\usepackage{rotating}
+\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} 
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} 
+\usepackage{ragged2e}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage[autostyle]{csquotes}
+\usepackage{natbib}
+\usepackage{doi}
+\bibliographystyle{authoryeardoi}
+\usepackage{authblk}
+\usepackage{comment}
+
+\usepackage{todonotes}
+
+ 
+\newcommand{\todoA}[1]{
+\todo[color=green!50!gray]{A: #1}
+}
+
+\newcommand{\inlineA}[1]{
+\todo[color=green!50!gray,author=A, inline]{ #1}
+}
+
+\newcommand{\commentA}[1]{{\color{green!40!gray} A: #1}}
+
+\newcommand{\toC}[1]{
+\todo[color=blue!30]{C: #1}
+}
+
+\newcommand{\inC}[1]{
+\todo[color=blue!30,author=C, inline]{ #1}
+}
+
+\newcommand{\coC}[1]{{\color{blue!70!gray} C: #1}}
+\usepackage{microtype}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\title{
+  (Mis)measuring competitiveness: the quantification of a malleable concept in the European Semester\thanks{
+    The authors acknowledge funding by the Austrian Science Fund (FWF) 
+    under grant number ZK 60-G27 and the Oesterreichische Nationalbank 
+    (Austrian Central Bank, Anniversary Fund, project number: 18144).}
+}
+
+\author{
+  \textbf{Claudius Gräbner-Radkowitsch} \\
+  Institute for Socio-Economics\\
+  University of Duisburg-Essen\\
+  \& \\
+  Institute for the Comprehensive Analysis of the Economy\\
+  Johannes Kepler University Linz\\
+  \href{mailto:claudius@claudius-graebner.com}{claudius@claudius-graebner.com} \\
+  \and
+  \textbf{Theresa Hager}\\
+  Institute for the Comprehensive Analysis of the Economy\\
+  Johannes Kepler University Linz\\
+  \href{mailto:theresa.hager@jku.at}{theresa.hager@jku.at} \\
+}
+\pagenumbering{Roman}
+\maketitle
+\setcounter{footnote}{0}
+
+\begin{abstract}
+\small
+This paper studies the conceptualization and quantification of 
+`competitiveness’ within the main policy coordination framework 
+of the EU, the European Semester. This topic warrants 
+attention since `competitiveness' is not only of central importance in the European policy discourse, but also a theoretically ambiguous and malleable concept
+with conflicting accentuations, all of which are subject of considerable 
+academic and political debate. 
+By investigating the translation of competition as a contested theoretical concept into 
+concrete indicators within a legally binding document, the paper produces three main 
+insights that deserve further attention, both scientifically and politically.
+First, the indicators of the semester mainly measure \textit{cost} rather than 
+\textit{technological} competitiveness, indicating a constriction of the 
+concept at the operational level.
+Second, while EU policy documents regularly stress the competitiveness of the 
+European Union \textit{as a whole}, the indicators in the semester measure 
+\textit{individual country competitiveness}.
+Finally, the indicators in the Semester measure how the competitiveness of
+single Member States changes over time, not how they perform relative to 
+others. 
+This shallows the heterogeneity of countries, which is problematic 
+given recent findings according to which absolute differentials of
+competitiveness across Member States is one important driver of accelerating 
+polarization patterns in the Union.
+
+\end{abstract}
+
+\keywords{European Union \and competition \and performativity \and European semester
+  \and political economy}
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\hypertarget{intro}{%
+\section{Introduction}\label{intro}}
+
+Few concepts receive the constant amount of attention in EU strategy papers,
+treaties, and policy debates as does \enquote{competitiveness}.
+It plays an important role in
+the institutional framework of the European Union since its inception as
+an economic partnership. Numerous references can be found in the
+\emph{Treaty of the European Union} and the
+\emph{Treaty on the Functioning of the European Union}. In 2000, the Lisbon strategy
+explicated the goal of making Europe \enquote{the most competitive {[}\ldots{]} economy in the
+world} and since the \emph{Annual Sustainable Growth Strategy} 2020 (ASGS, published
+in 2019), the
+concept of \enquote{competitive sustainability} forms the center of the economic model
+pursued by the Union.
+
+This paper is concerned with the measurement of \enquote{competitiveness}
+in the main policy coordination framework of the European Union
+-- the European Semester.
+The prime focus is on how an \emph{a priori} ambiguous concept such as
+\enquote{competitiveness} gets translated into allegedly unambiguous quantitative
+indicators, and what the practical implications of this process are.
+This entails questions on whether there is a consistent view on the nature
+and determinants of \enquote{competitiveness} within the Semester, and
+what quantitative measures for \enquote{competitiveness} are used.
+Finally, the paper also asks what alternative operationalizations
+could have been used, and what the consequences of such alternative
+operationalizations would have been.
+
+The motivation for this assessment is twofold:
+On the one hand, the literature on socio-economic polarization and divergence
+in Europe suggests that one factor for
+unequal development in the EU today is the \emph{competition among Member States}.
+More precisely, the current institutions are
+said to foster a competitive \enquote{race for the best location}
+that reinforces existing core-periphery patterns and aggravates
+the path-dependence of developmental trajectories
+\citep[e.g.][]{Kapeller:2019cds} -- a tendency that is in stark contrast to the
+promise of social convergence offered by the European Union, as formalized
+already in the Maastricht Treaty in 1992. This disparity
+between the narrative of the general strategies that focus on the
+\emph{competitiveness of the EU as a whole}, and the detrimental implications of a
+\emph{competition within the EU} motivates a closer inquiry into how
+\enquote{competitiveness} is conceptualized within the regulatory framework of the
+EU.
+
+On the other hand, the existing literature indicates that the concept of
+\enquote{competitiveness} is \emph{malleable}: a number of conflicting interpretations of
+its precise content co-exist and are subject to considerable political struggles
+and competing policy paradigms \citep[e.g.][]{Borras2011, Princen2016}.
+Examples for different views of competitiveness include the ideas of
+\emph{cost} competitiveness, \emph{technological} or \emph{quality} competitiveness, or the
+above mentioned \emph{competitive sustainability}.
+While some of these views are difficult to compare since they refer to very
+different properties, others, such as \emph{cost} and \emph{technological} competitiveness,
+contain conflicting views on what makes actors successful in certain situations.
+Thus, the very process of translating a malleable concept into a quantitative
+indicator necessarily entails important conceptual and political assumptions,
+which shall be the main subject of the present analysis.
+
+To this end, the rest of the paper is structured as follows: Section \ref{sec:litreview}
+reviews the existing literature on the role of competitiveness
+within the governance structure of the EU. Then, section \ref{sec:semester}
+describes the key institutional elements of the European Semester and
+discusses the relevance of informal institutions for its actual functioning.
+Against this backdrop, Section
+\ref{sec:ASGS} searches for a consistent interpretation and measurement of
+\enquote{competitiveness} in the most important strategy document of the Semester, the
+\emph{Annual Sustainable Growth Strategy} (ASGS).
+Because this search will turn out to be unsuccessful, Section
+\ref{sec:competIndicators} turns to the \emph{Macroeconomic Imbalance Procedure} (MIP)
+and discusses the quantitative
+indicators used to measure \enquote{competitiveness} therein,
+and compares them to alternatives.
+Finally, section \ref{sec:concl} summarizes the main insights and concludes.
+The paper is also accompanied by an appendix, which contains more detailed
+information about the formal time line of the European Semester, its general
+content, and the classification of countries within the MIP and
+\emph{Stability and Growth Pact} (SGP).
+
+\hypertarget{sec:litreview}{%
+\section{Theoretical framework and existing literature}\label{sec:litreview}}
+
+The present paper builds upon three different strands of the existing literature:
+first, works on the malleability of the concept of competitiveness in
+general and in relation to EU rules; second, literature explicitly concerned
+with the contents and effects of the European Semester, and, finally, the
+literature on comparative economic development in Europe, which has identified
+competition within the EU as one driver of polarization patterns.
+
+\hypertarget{subsec:malleab}{%
+\subsection{The malleability of competitiveness as a theoretical concept}\label{subsec:malleab}}
+
+The first branch of literature is concerned with the reliability of EU rules
+on malleable concepts and the underlying conflict between different policy
+paradigms,\footnote{The notion of a \enquote{policy paradigm} goes back to \citet{hall:1993} and refers
+  to a set of beliefs and assumptions about relevant problems and feasible
+  solutions.}
+which is closely related to the fact that
+there are many different and contradicting theories of competition in the
+social sciences and the humanities, many of which take very different
+ontological, epistemological or normative standpoints
+\citep[e.g.][]{altreiter2}.
+For instance, \citet{Borras2011} explain how the Lisbon strategy,
+by placing the broad and underdetermined concept of \enquote{competitiveness} at its
+core, has helped to considerably expand the policy space of the EU. In contrast to
+the sole focus on economies of scale within the Single Market Strategy before, the
+reference to competitiveness has stressed the relevance of institutional factors
+\citep[p. 474]{Borras2011}, thereby expanding the
+strategic role of policy makers \citep[e.g.][]{davies}.
+As a governance architecture the Lisbon Strategy had an important \enquote{ideational}
+component. An ideational component
+is made up of a set of ideas, such as \enquote{governance}, \enquote{competitiveness}, or \enquote{sustainability.
+As argued by \citet{Borras2011}, these
+ideas themselves have no clear-cut meaning \emph{a priori}. Rather, their precise meaning
+is discursively malleable, i.e.~\enquote{they are infused with norms that
+can be contested, changeable or purposefully created.} \citep[p. 470]{Borras2011}.
+These struggles are not only about the precise meaning of the term
+'competitiveness}, but also about the institutions that are supposedly
+most beneficial for the competitiveness of the Union
+\citep[see also][]{Princen2016}.
+
+The vagueness of the concept, however, does not compromise its relevance
+\citep[p. 63]{Aiginger}:
+The practical implications are visible, for instance, in the distinct ways sanction
+mechanisms are applied in practice \footnote{The sanctions apply only in the context
+  of the \emph{Excessive Deficit and Imbalance Procedure} of the Semester (for a detailed
+  description see the Appendix); in this case e.g.~the Commission can call for policies
+  that increase \enquote{competitiveness} as a means to reduce public deficits.}.
+Moreover, the malleability of the underlying concept also comes with an
+expansion of the policy space since its vagueness
+enables competitiveness to be a \enquote{rhetorical device} that can be used by politicians
+almost to their liking in justifying policies \citep[p. 865]{Linsi}.
+This fact has been discussed in the literature on the European Union not only with regard
+to the Lisbon strategy, but with regard to European institutions more generally,
+especially when it comes to
+the topic of competitiveness: since there is no universally agreed upon core
+concept of \enquote{competitiveness} \citep[e.g.][]{Hay2007, blyth, Princen2016},
+its ultimate interpretation is subject to discursive power struggles
+among different policy actors.
+
+\hypertarget{content-and-effectiveness-of-the-european-semesters}{%
+\subsection{Content and effectiveness of the European Semesters}\label{content-and-effectiveness-of-the-european-semesters}}
+
+The second stream of relevant literature is concerned
+with the content of the European Semester and its political foundations.
+In this context, \citet{Princen2016} discuss to what extent the SGP as part of
+the Semester corresponds to a consistent policy paradigm.
+They find that \enquote{the clash between {[}\ldots{]} different perspectives, and the high
+political level at which decisions were taken, is likely to have led to
+power-based bargains and compromises without a clear underlying policy paradigm.}
+(p.~363).
+
+This relates to the general debate about the conflict between economic and
+social policies in the Semester. At least the design of the European Semester
+suggests that it is theoretically envisaged so as to enhance the role social
+policy should play in the governance architecture of the European Union
+\citep{Verdun2018}. Recent developments related to the \emph{European Pillar of Social Rights} are further evidence of the Commission's efforts to strengthen social objectives \citep{EuropeanCommission:pillar}.
+Recent analyses of country-specific recommendations show,
+however, that the \enquote{policy direction} of the EU expressed therein is not clearly
+social \citep{Haas2020} and that the core of the decision-making process are
+sound budgets indicating
+at least the political contestation of social policy in the EU
+\citep{Copeland2018, Bekker2018}.
+\citet{Maricut2018} refer to the malleability of
+rules and concepts mentioned in Section \ref{subsec:malleab} by showing that much of coordination within the European Council and especially the Economic and Financial Affairs Council is subject to informal policy dialogue.
+Within these power struggles, finance ministers usually enjoy advantages
+relative to \enquote{social} ministers in such coordination, indicating that economic
+interests are prioritized over social concerns.\footnote{The
+  governance architecture of the European Union is complex and influenced by
+  specific legislative competences. \citet{Verdun2018} reflect that the
+  introduction of the European Semester represents \enquote{a fundamental shift in EU
+  socioeconomic governance} (p.~139). The authors cited in this section
+  are well aware of those shifts and that the introduction of the Semester enhanced
+  EU institutions' impact on national policy making although no legal
+  shift of sovereignty from members to the Union preceded. The Treaties form the
+  actual legal basis of the European Union and are determined by the Unions nature
+  of economic and market integration. This focus influences the direction that economic
+  and social policies exhibit \citep{Copeland2018}.}
+
+Then there are also studies concerned with the actual effectiveness of the
+European Semester. Several use the implementation scores published by the
+European Commission and mainly
+find little evidence for the effectiveness of the MIP
+\citep{bruegel:2019,bruegel:2018, bruegel:2015, DerooseGriesse:2014, Hradisky:2017, Hradisky:2016}.
+The use of implementation scores to judge the effectiveness has, however, been
+seriously called into question (see, e.g., \citet{Bokhorst:2019})\footnote{For a short
+  discussion of implementation scores regarding CSRs as used by the Commission see
+  the appendix.}.
+Yet, there are also a few case studies that analyse the impact of the MIP on
+domestic policy agendas
+\citep[for more details see, e.g.,][]{Bokhorst:2019, Maatsch:2017, Eihmanis:2017, Louvaris:2018, Schreiber:2017, Schulten:2015}.
+
+\hypertarget{subsec:polar}{%
+\subsection{Competition and comparative development trajectories in the EU}\label{subsec:polar}}
+
+The final branch of literature relevant for the content of this paper approaches
+the topic of competitiveness from a different angle: rather than studying how
+it is infused with meaning in political discourses, it focuses on its implications
+for comparative socio-economic development. \citet{Kapeller:2019cds}, for instance,
+discuss the central role played by intra-European competition for the accelerating
+polarization tendencies in the Union: European institutions provide incentives
+for countries to engage in a \enquote{race for the best location} \emph{within} Europe.
+To win this race they rely on their technological superiority
+(e.g.~Austria or Germany) without providing technologically less developed
+countries the chance to catch up, or on particular institutional
+\enquote{location factors} such as low corporate tax rates (e.g.~Ireland, the Netherlands),
+low labor market regulation (such as many Eastern European countries), or
+unregulated financial markets (e.g.~Luxembourg or Malta).
+The effects have been documented extensively in the literature and include a
+structural polarization in terms of industry structures and technological
+competitiveness \citep[e.g.][]{Simonazzi.2013, Storm.2015jsi, Graebner.2020u},
+the pursuit of different (and incompatible) growth models
+\citep[e.g.][]{Baccaro.2016, Graebner.2020u}, and,
+in the end, a divergence of living standards \citep[e.g.][]{Kapeller:2019cds}.
+To better understand the reasons for the growing polarization in Europe,
+an increasing number of studies applies the structuralist distinction between
+core and periphery countries
+\citep[e.g.][]{Simonazzi.2013, Celi:2018},
+where economic development is explained not only by the single country
+characteristics alone, but also historical events and interdependencies between
+the economies \citep[for methodological remarks see][]{Graebner:2020struc}.
+While the classical distinction is that of a \enquote{core} and a \enquote{periphery},
+\citet{Graebner:2020jee} have delineated four self-reinforcing development
+trajectories in the EU: core countries, periphery countries, financial hubs and
+catch-up countries, all of them featuring different main sources for their
+international competitiveness.
+
+\hypertarget{sec:semester}{%
+\section{The European Semester}\label{sec:semester}}
+
+Before studying the operationalizations of
+\enquote{competitiveness} within the European Semester, a concise description of
+the Semester as such will be provided below.\footnote{A more extensive description of the official time line
+  of the Semester and its formal functioning as well as a table with abbreviations
+  of the most important institutions used througout the section
+  is provided in the appendix.}
+More precisely, this section explains its role within the institutional
+framework of the EU as well as the important role of
+\emph{informal} institutions for its functioning.
+It closes with an overview over those documents
+that will then be used to study the operationalization of
+\enquote{competitiveness} within the Semester.
+
+The European Semester is the \enquote{framework for the coordination of economic
+policies across the European Union}
+\citep{EuropeanCommission:EuropeanSemester} that
+was established in 2010 to address an apparent lack of policy coordination
+prior to the financial and economic crisis.
+It synchronized existing policy coordination
+frameworks, and extended the scope of policy coordination by not only
+considering fiscal, but macroeconomic policies more generally.
+It comprises \emph{inter alia} rather abstract strategy papers
+such as the \emph{Annual Sustainable Growth Strategy}\footnote{Prior to 2020 the \emph{Annual Sustainable Growth Strategy} was called the
+  \emph{Annual Growth Survey}. In the following we
+  will only use the term \emph{Annual Sustainable Growth Strategy} (ASGS).}, the more concrete Country Reports and country-specific recommendations (CSRs), as well
+as specific indicators with corresponding thresholds, most of them consolidated
+within the \emph{Macroeconomics Imbalance Scoreboard} (MIS).
+The Semester is overseen by the Commission, which monitors the compliance of
+Member States with the prescriptions of the Semester and delineates
+country-specific recommendations.
+All decisions of the Commission are then formally adopted
+by the European Council.\footnote{While the Semester is overseen by the Commission, the
+  Council and the European Council, the introduction of the mechanism of
+  Reverse Qualified Majority Voting
+  respective Commission propositions under the excessive
+  deficit and imbalance procedures significantly increased the influence
+  of the Comission \citep{Aken2013}. Additionally, the Economic Governance Framework as amended and shaped by the two-pack and six-pack has recently been put under review by the current Commission.}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth,height=0.85\textheight]{/Users/theresahager/Arbeit/SPACE/WP2/Projekte/öffentliche repos/MisMeasuringCompetitiveness/output/semester_tt} 
+
+}
+
+\caption{The official time line with the main elements of the European Semester. A more extensive description of this time line and its elements is provided in the appendix.}\label{fig:semtt}
+\end{figure}
+
+The name of the European Semester stems from the fact that it formally runs
+over the period of about one year, starting in November.
+It is separated into an autumn, winter, spring, and implementation package
+(see Figure \ref{fig:semtt}).
+In the course of each Semester, general strategy papers such as the ASGS or the
+Alert Mechanism Report are published and recommendations tailored to each Member
+State issued (country reports, country specific recommendations).
+
+A special role is played by the ASGS, which gets published at the beginning
+of the semester and sets European
+policy priorities for the next 12 to 18 months.
+Its relevance derives from the fact that all instructions and suggestions
+to be developed during the current semester must be traceable to the
+most recent ASGS.
+In other words: only measures that are anticipated in the current ASGS
+can be implemented later.
+It, thereby, mainly forms the \enquote{frame of feasibility} of
+the current semester and while it remains rather abstract in its wording,
+it is a key source for identifying the current policy priorities within the
+Union.
+
+Another center stage element is the Macroeconomic Imbalance Procedure since, together
+with the Stability and Growth Pact (extended by the Fiscal Compact), it is the legally binding element of the Semester.
+It runs through the whole cycle and thus, the evaluation of Member States
+and the actions they take respectively, are not a one shot incident but resemble a
+thorough process. Member States are first screened for breaches of thresholds
+assigned to specific indicators. The screenings are revised again and if necessary
+in-depth reviews are arranged. Intensified monitoring and discussion with Member
+States follow that ultimately culminate in tailored prescriptions that are reassessed
+in next year's cycle.
+
+The official time line from Figure \ref{fig:semtt} suggests that the
+Semester is a highly formalized process.
+In practice, however, the analysis of the definite functioning of the Semester
+is aggravated by the fact that the actual coordination
+among the European Union and its Member States follows to a considerable
+extent \emph{informal} (and, thereby, largely undocumented) institutions.
+In effect, it is not straightforward to discern the actual implementation of
+the Semester from the official documents.
+For instance, while the time table in Figure \ref{fig:semtt}
+(and more precisely described in the appendix) suggests a clear
+coordinational hierarchy with first the Commission setting general policy
+guidelines in the ASGS and country reports, and Member States then answering
+back, ultimately leading to agreed upon recommendations in the form
+of the CSRs, \emph{de facto} Member States coordinate with the
+Commission at the beginning of the Semester and decide upon priorities to be
+determined officially only later on.\footnote{Information regarding the
+  informal institutions and character of the European Semester stem from
+  interviews with experts and practitioners.}
+Another example concerns the development of the ASGS.
+This document is elaborated by several parties by
+means of circulation. Each party involved may include or exclude
+passages, words and phrases.
+Due to the different political orientations of the actors involved
+the end product integrates a large range of policy directions and a wide
+variety of indicators, which might be surprising in case one does not
+know about the circumstances in which the document gets compiled.
+
+This informal character of the Semester poses a challenge for the
+objective of the present paper:
+since \enquote{competitiveness} is a malleable theoretical concept
+and because of the number and heterogeneity of actors (
+who might hold very different views on what the right or most adequate
+conception of competitiveness is) involved in the delineation
+of general documents such as the ASGS, it will be hard to distill a
+consistent notion of competitiveness from the Semester.
+To address this challenge we proceed as follows:
+First, despite the informal way of its creation, the ASGS plays a decisive role
+in the overall Semester: each measure or policy
+that is going to be implemented or requested during the semester must be
+traceable to the ASGS.
+It, therefore, defines the \enquote{frame of feasibility} of the European Semester.
+Thus, if one wishes to understand what particular interpretation of
+\enquote{competitiveness} dominates, the ASGS simply cannot be ignored.
+At the same time, none of the instructions or indicators in the ASGS is
+legally binding. With very few exceptions, there are no sanctions for
+non-compliant members.
+
+This is different for the \emph{Macroeconomic Imbalance Procedure} (MIP) and
+the \emph{Stability and Growth Pact} (SGP):
+these are the elements of the Semester that have the strongest
+legislative basis -- the SGP itself, the related \emph{Six Pack} and \emph{Two Pack}
+contracts, as well as the
+\emph{Treaty on Stability, Coordination and Governance in the Economic and Monetary Union} --
+and that even allow for sanctions for non-compliant Member States.
+With this legal character comes the necessity to formulate clear target
+dimensions and values. It is this set of target dimensions and values that
+will be used to infer the underlying notion of \enquote{competitiveness} of the
+Semester.\footnote{Thus, we do not discuss \enquote{intermediate} documents, such as the country reports
+  and CSRs. However, a short description of implementation scores and designated
+  policy areas as used by the
+  Commission to assess the success of CSRs is provided in the appendix.
+  While we analyzed these documents and did not find a coherent thread concerning
+  competitiveness but instead several, over the years mostly inconsistent
+  applications and implications -- a finding that is in line
+  with the \enquote{rhetorical device} character of competitiveness discussed in the
+  literature \citep[e.g.][]{Linsi} -- we do not report on these results for
+  reasons of space and because these documents are neither as central as the ASGS
+  nor legally binding as is the MIP.}.
+
+\hypertarget{sec:ASGS}{%
+\section{Frame of feasability -- the Annual Sustainable Growth Strategy}\label{sec:ASGS}}
+
+The ASGS is \emph{the} central strategy paper of the European Semester.
+The first one -- back then the \emph{Annual Growth Survey}
+-- was published along with the introduction of the European Semester in 2010.
+The ASGS sets policy priorities for Europe for the next 12 to 18 months
+and its exceptional relevance derives from the fact
+that it defines the contentual frame for the current semester.
+Topics and measures that are not anticipated in the ASGS are extremely unlikely to
+be required or
+suggested in other documents in the current semester, such as, for instance,
+country reports or country-specific recommendations -- hence, frame of feasibility.
+Thus, one might expect that the framing and interpretation of the concept of
+competitiveness in the ASGS yields important information about how
+it is understood in the overall Semester.
+
+However, in practice the ASGS is a rather general strategy paper that
+accommodates a wide range of issues and refers to a very diverse set of
+indicators without being ever too explicit. Definite indicators that
+entail a clear target dimension or concrete target values are extremely rare.
+Then again one can find dozens of general instructions regarding what should
+either be
+accomplished by Member States or the European Union as a whole, but nothing with
+regard to what is meant by competitiveness specifically.
+More precisely, whenever the ASGS is concerned with the topic of
+\enquote{competitiveness}, the indicators referred to are rather broad, comprising,
+for instance, both
+indicators concerned with innovation and technological competitiveness, as well
+as cost variables meant to measure cost competitiveness.
+
+This is consistent with the malleable and heterogeneous character of
+the theoretical concept as discussed in section \ref{subsec:malleab}.
+And while disappointing at first, the result is actually not surprising if one
+considers that the ASGS is written in circulation, with various actors making
+suggestions on adding or removing certain formulations. Thus, the document
+entails quasi per construction a wide array of different notions of
+\enquote{competitiveness}.
+This implies that the concept is used rather inconsistently (or very broadly),
+aggravating a consistent interpretation of the ASGS.
+Hence, while the ASGS is not as useful as one might expect when it comes to the
+concrete interpretation of \enquote{competitiveness} within the Semester, the way
+it is written allows for the deduction of contentual trends in the Semester
+and the relative importance of considerations on competitiveness.
+To extract this information from the documents
+the text of the ASGS was analyzed via a word count analysis for selected
+words in all ASGSs from 2011 to 2021. The results illustrate
+the relative importance of \enquote{competitiveness} as compared to other central
+concepts and are summarized in Figure \ref{fig:wordcounts2}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth,height=0.75\textheight]{/Users/theresahager/Arbeit/SPACE/WP2/Projekte/öffentliche repos/MisMeasuringCompetitiveness/output/freq_select_words_lines} 
+
+}
+
+\caption{Relative frequency of the words 'growth','investment' 'jobs/employment', 'convergence/cohesion' and the stubs 'sustainab*' and 'competiti*'. Frequency is measures by the share of these words of all words in each of the ASGS between 2011 and 2021. Points and shaded lines are actaual observations, the bold line is the kernel estimate representing the underlying trend.}\label{fig:wordcounts2}
+\end{figure}
+
+The concepts of \emph{growth}, \emph{investment}, \emph{jobs}/\emph{employment} traditionally form
+the core of the ASGS; concepts related to \emph{sustainability} became quite relevant
+recently. Therefore, the relative frequency of these terms were used as reference
+points to assess the relative importance of terms related to \emph{competitiveness}.
+In order to put the topic of \enquote{competitiveness} into relation to the overall promise of
+economic convergence (which, according to the literature surveyed above, is
+potentially in conflict with a focus on competition), the terms \emph{convergence}
+and \emph{cohesion} -- used rather synonymous in the ASGS -- were also considered.
+The results in Figure \ref{fig:wordcounts2} indicate that the topic
+of competitiveness is of similar importance if compared to the other concepts
+mentioned before,
+although the topic of \enquote{sustainability} does have a greater presence just now.
+If compared to the other topics, however, the relevance of \enquote{competitiveness}
+remains rather stable over time.
+
+In all, the analysis of the ASGSs has shown (1) that there is no consensus
+about the precise meaning of \enquote{competitiveness} in the main strategy document of
+the Semester, which reflects the malleable character of \enquote{competitiveness};
+(2) that the topic
+of \enquote{competitiveness} is of continuous relevance in the ASGS, notwithstanding the
+fact that policy makers involved do not share an unanimous definition; and (3)
+that \enquote{competitiveness} is written about as much as about convergence, an interesting
+insight given the argument from the literature that the relation between the
+two concepts is rather intricate
+\citep[e.g.][see also Section \ref{subsec:polar}]{Kapeller:2019cds}.
+
+\FloatBarrier
+
+\hypertarget{sec:competIndicators}{%
+\section{The measurement of country competitiveness in the Semester}\label{sec:competIndicators}}
+
+As indicated in section \ref{sec:semester}, the MIP and SGP allow to sanction,
+in some cases, countries not adhering to the rules and recommendations issued
+based on the MIP/SGP. This requires the respective rules to be
+formulated more concretely, which is why at this point concrete, quantitative
+indicators are used to measure the performance of the Member States.
+The indicators used to measure competitiveness are part of the MIP
+(the SGP refers largely to national budgets) and
+are compiled in the MIS, which in all comprises 14 headline and 28 auxiliary
+indicators.\footnote{A more complete
+  description of all indicators, the thresholds and the resulting assessments of
+  the countries can, again, be found in the appendix.}
+Three headline indicators are explicitly labeled as measuring \enquote{competitiveness}
+\citep[]{EuropeanCommission:StaffMIP} and, thereby, contain
+information on how the Commission interprets this malleable concept in practice.
+
+All indicators of the MIS come with respective thresholds
+used to identify countries that suffer from macroeconomic imbalances.
+If Member States are trespassing the thresholds, the Commission commands an
+in-depth review (IDR) and declares the countries in its \emph{Alert Mechanism Report}
+(see section \ref{sec:semester} and the appendix).
+The IDR consists in visits to Member States, closer monitoring and
+a closer inspection of alleged imbalances. If the suspicion of serious imbalances
+gets confirmed during the IDR, concrete recommendations will be issued to remedy
+them.
+
+The three headline indicators that are explicitly meant to
+quantify the competitiveness of Member States are
+(1) the three-year percentage change in the real effective exchange rate (REER),
+which should not exceed \(\pm5\) or \(\pm11\) per cent for Euro and non-Euro countries,
+respectively;
+(2) the five-year percentage change in export world market shares, which should
+not fall below \(-6\) per cent;
+and (3) the three year percentage change in nominal unit labour costs (ULC),
+i.e.~the ratio of labour cost to labour productivity, which should not exceed
+\(9\) or \(12\) per cent for Euro and non-Euro countries, respectively.
+All three indicators refer to percentage changes and, thereby, do not take into
+account the different levels of the countries.
+
+Figure \ref{fig:jeeCompetitiveness} shows the dynamics of the indicators
+for countries following different development models. The development models
+referred to were identified in \citet{Graebner:2020jee} and are summarized in
+Table \ref{tab:countrygroup}.\footnote{Different development models are characterized by different main drivers
+  for the country's development. For instance, the economic development of
+  core countries relies mainly on a sizeable and complex industry sector,
+  whereas financial hubs rely mostly on the value added created in their
+  financial sectors. See \citet{Graebner:2020jee}
+  for more details, and \citet{Baccaro.2016} for the related concepts of
+  a growth model.}
+The reason why Figure \ref{fig:jeeCompetitiveness} refers to the development
+models and not individual countries is that this allows for the relation of
+the present considerations with the result of the
+polarization literature surveyed in section \ref{subsec:polar}.\footnote{Moreover, a visualization containing all individual countries, which we
+  provide in the appendix, is less clear and, thereby, less illustrative.} This literature argues that \emph{competition among Member States} and a simultaneous
+\emph{divergence in competitiveness} among Member States are an
+important driver of a polarization in living standards, pointing to a conflict
+between the overall goal of convergence within the EU on the one hand, and
+competition \emph{among} Member States on the other \citep[e.g.][]{Kapeller:2019cds}.
+
+\begin{table}
+\centering
+\caption{The country groups delineated by \citet{Graebner:2020jee}.}
+\label{tab:countrygroup}
+\begin{tabular}{L{0.2\textwidth}L{0.7\textwidth}}
+\toprule
+\textbf{Country group} & \textbf{Member}\\
+\midrule
+Core countries        & Austria, Belgium, Denmark, Finland, Germany, Sweden \\
+Periphery countries    & Cyprus, France, Greece, Italy, Portugal, Spain      \\
+Financial hub         & Ireland, Luxembourg, Malta, Netherlands             \\
+Catchup countries     & Bulgaria, Croatia, Czechia, Estonia, Hungary, Latvia, Lithuania, Poland, Romania, Slovakia, Slovenia \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{/Users/theresahager/Arbeit/SPACE/WP2/Projekte/öffentliche repos/MisMeasuringCompetitiveness/markdown/figures/jeeCompetitiveness} 
+
+}
+
+\caption{The three main competitiveness indicators of the MIP for countries in different country groups. The complete line refers to the average, the dashed lines indicate the standard deviation of the group. The black line refers to the threshold of the MIP. If there is an alternative threshold for non-Euro countries, it is indicated via a dashed black line.}\label{fig:jeeCompetitiveness}
+\end{figure}
+
+Four main conclusions emerge from an inspection of the indicators and their
+dynamics.
+The first concerns the selection of indicators in the first place:
+two of the three measures of competitiveness are directly meant to measure
+\emph{cost} competitiveness (labor costs and relative exchange rate).
+More precisely, if one understands \enquote{competitiveness} broadly as the ability to
+gain market shares for one's products on global markets,
+then one can distinguish between two main sources of competitiveness:
+low prices or exceptional goods
+\citep[or, similarly, goods of exceptional quality, see][]{Sutton2012}.
+Given the relatively high social and ecological standards in the European Union,
+the pursuit of an export strategy that is mainly built on cost advantages is
+not promising \citep[see also][]{Kapeller:2019cds}.
+Rather, the relatively advanced countries in the European Union must base their
+export model on \emph{technological} competitiveness, i.e.~their ability to produce
+products that other regions cannot produce (or, at least, cannot produce on the
+same level of quality).
+Policy measures that boost the cost competitiveness of a country are, however,
+unlikely to boost its technological competitiveness since the production of
+more advanced products usually comes with \emph{higher} costs.
+Given that for advanced countries such as Euro Member States it is
+technological rather than cost competitiveness that is of particular relevance
+on international markets \citep[e.g.][]{Carlin.2001, Storm.2015jsi, Dosi.2015},
+it is notable that two of the three measures of competitiveness are directly
+meant to measure cost competitiveness via labor costs (ULC) and the relative
+value of the European currency (REER).\footnote{Moreover, these measures are computed using information on the entire
+  economy. One might argue that only the costs in selected sectors are relevant
+  for actual cost competitiveness, since, e.g., the health care sector is only
+  concerned with offering services in the local economy, but is not meant to
+  compete on global markets. This issue could be addressed by using sectoral
+  data.}
+The third indicator, export shares, is a very broad measure of general
+competitiveness.
+The dimension of \emph{technological} competitiveness is not considered in the MIS
+indicators, nor does one find any reference to the concept of
+\enquote{competitive sustainability}, which, while being vague itself, takes a
+prominent place in the current Annual Growth Strategy of the Union (see Section
+\ref{sec:ASGS}).
+
+Second, the three main indicators exclusively refer to relative changes
+of individual countries, i.e.~percentage point changes with regard to previous
+values. This means that they do not consider the performance of a
+country relative to others, which would be more
+intuitive given the general meaning of \enquote{competitiveness}, but only its
+individual trend.
+The fact that absolute differences between countries are likely to be relevant is illustrated in
+Figure \ref{fig:abschanges}, where we compare the levels of the third indicator,
+world export shares, after controlling for the population size of the different
+countries, to its average changes between 2010 and 2019. The relationship is
+not very pronounced, indicating that the focus on relative changes
+over time shallows important differences in levels across countries.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{/Users/theresahager/Arbeit/SPACE/WP2/Projekte/öffentliche repos/MisMeasuringCompetitiveness/markdown/figures/export_measures} 
+
+}
+
+\caption{The residuals after regressing world market shares on population as an absolute measure for competitiveness (panel a) and the relationship of this measure to the average 5-year changes of world export shares as used in the MIS. Data refers to the period between 2010 and 2019. Source: Eurostat.}\label{fig:abschanges}
+\end{figure}
+
+To underscore the relevance of the previous two points, the
+competitiveness of the Member States as measured by the MIS indicators
+is now compared with a
+measure of technological competitiveness, that also allows for a direct
+comparison of the levels across countries. More precisely,
+we will use the index of economic complexity \citep[ECI, ][]{Hidalgo.2009}, which
+is meant to measure the level of technological capabilities accumulated in a
+given economy. It has, in a slightly modified version, also been used as a
+direct measure for the overall competitiveness of a country \citep{Tacchella.2013}.
+A comparison of the ECI with the measures used in the Semester might show to what
+extent the latter takes into account the dimension of \emph{technological}
+competitiveness.
+
+As can be seen in figure \ref{fig:eciMIScomp}, however, the correlation between the ECI
+and all variables used in the MIS is modest at best. Regarding ULC, the
+correlation tends to be positive, indicating that more advanced countries have
+higher ULC, consistent with the fact that more complex products usually have
+higher factor costs. For the other two variables, no clear pattern shows itself.
+One has to keep in mind, however, that the ECI is a stock variable, whereas the
+MIS indicators measure changes.
+Nevertheless, if one takes them as general measures of country
+competitiveness, one would expect a clearer relationship than the one observed
+in figure \ref{fig:eciMIScomp}.
+
+To compare changes in economic complexity with the indicators
+in the MIS one would need to use changes in the global ranks of economic
+complexity since changes in the indicator as such cannot be meaningfully
+compared over time. However, even if changes in the ranks are considered, the
+relationship is not as clear as one would have expected (see figure
+\ref{fig:eciMIScompRanks}): ULC are, if anything slightly positively associated
+with improvements in the global ECI ranking, consistent with the quality
+interpretation above. There is a slightly positive relationship for the REER,
+which is surprising in the sense that a higher REER implies a reduction in cost
+competitiveness, but consistent with the results according to which cost
+competitiveness is not essential for the export success of advanced countries
+\citep[e.g.][]{Carlin.2001, Storm.2015jsi, Dosi.2015}.
+Finally, there is a considerably positive relationship with changes in the world
+export shares. This latter point is by far the most straightforward relationship,
+yet it is largely driven by countries from the Eastern European catch-up
+category. For the remaining countries the relationship is moderate at best.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{/Users/theresahager/Arbeit/SPACE/WP2/Projekte/öffentliche repos/MisMeasuringCompetitiveness/markdown/figures/eci_mis_plot} 
+
+}
+
+\caption{The relationship between the Economic Complexity Index as a main indicator for technological competitiveness and the competitiveness indicators in the MIS. Data spans from 2010 to 2019. Source: Eurostat and Atlas of Economic Complexity; authors' own calculations.}\label{fig:eciMIScomp}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{/Users/theresahager/Arbeit/SPACE/WP2/Projekte/öffentliche repos/MisMeasuringCompetitiveness/markdown/figures/eci_mis_rank_plot} 
+
+}
+
+\caption{The relationship between changes in the global rank of the  EconomicComplexity Index from 2010 to 2019 and the competitiveness indicators in the MIS.Source: Eurostat and Atlas of Economic Complexity; authors' own calculations.}\label{fig:eciMIScompRanks}
+\end{figure}
+
+The third noteworthy issue with regard to the headline indicators on
+competitiveness is the fact that these indicators measure not mainly how
+individual countries contribute to the competitiveness of the EU as a whole,
+but rather how these countries perform within the EU.
+Sometimes, their individual competitiveness is explicitly measured against that
+of other EU countries. For the computation of the REER, for instance, the rate
+is relative to a set of 42 countries in which 27 countries are from the EU itself.
+When computing world export shares, an increase in the competitiveness of
+one EU country comes, \emph{ceteris paribus} also with a decline of competitiveness
+of the other Member States. While measuring the competitiveness of the EU as
+a whole is not trivial, the misalignment of the rhetoric in the strategy papers
+and the indicators used in the Semester is noticeable.
+While measuring the competitiveness of the EU as
+a whole is not trivial, the misalignment of the rhetoric in the grad strategy
+papers, such as the Lisbon Strategy or Europe 2020,
+and the indicators used in the Semester is noticeable
+
+Finally, when it comes to the actual dynamics of the indicators, one cannot
+observe any clear pattern for countries
+following different development models (see figure \ref{fig:jeeCompetitiveness}).
+While one might interpret this as evidence against the findings of the
+polarization literature surveyed above, an alternative interpretation would
+stress the fact that the MIS indicators do not measure the kind of
+competitiveness that, according to the literature, is decisive for the success
+of the development models, i.e.~(differences in the level of)
+\emph{technological} competitiveness.
+This latter interpretation is more consistent with the observation that
+differences among groups are visible if one takes into consideration measures
+for technological competitiveness, such as the ECI, which show intuitive
+behaviors for the different country groups \citep{Graebner.2020u}.
+
+In all, the elaborations above suggest that, first,
+within the MIS the malleable concept of
+competitiveness is translated into a consistent set of quantitative indicators,
+and thereby, interpreted in a very particular way.
+Thus, in contrast to the (vague) ASGS, not all different interpretations of
+\enquote{competitiveness} are considered, but mainly the specific idea of cost
+competitiveness.
+Second, the indicators shallow differences in levels across countries; they
+only measure changes in the competitiveness of single countries. This is a
+rather counterintuitive appraoch, given the general character of
+\enquote{competitiveness} as a \emph{relative} concept.
+Finally, the way \enquote{competitiveness} is measured is inconsistent with the
+common narrative of the EU to become a competitive region \emph{as a whole};
+rather, the indicators focus on country-specific rather than EU-wide
+competitiveness. As will be discussed below, this has also some important
+implications for how the measurement of competitiveness in the Semester relates
+to the overall promise of economic convergence.
+
+\FloatBarrier
+
+\hypertarget{sec:concl}{%
+\section{Discussion}\label{sec:concl}}
+
+The present paper was concerned with the interpretation (and operationalization)
+of the concept of \enquote{competitiveness} in the central policy
+coordination framework of the EU, the European Semester, an analysis that
+was aggravated by the relevance of informal institution governing the
+actual practice of the Semester as such.
+This question is, nevertheless, relevant since while the concept of
+\enquote{competitiveness} is regularly mentioned in
+the main strategy papers of the EU, the existing literature has stressed its
+malleability and the fact
+that the ultimate interpretation of what \enquote{competitiveness} means and how it
+is determined has been subject to discursive struggles and differing policy
+paradigms within the EU.
+
+Against this backdrop the paper was concerned with the search for translations,
+which turn the theoretically ambiguous concept into concrete and quantitative
+indicators. The first attempt to identify such translations was made with
+regard to the central strategy document of the Semester, the ASGS.
+While the ASGS is extremely important since it
+defines the \enquote{frame of feasibility} for a whole cycle of the Semester,
+the Commission therein remains very
+vague on the specific definition and determination of competitiveness.
+Instead of translating the ambiguous concept into concrete indicators,
+references are made to a wide array of different and conflicting interpretations
+found in the theoretical literature.
+This, however, does not compromise the importance of \enquote{competitiveness}: the
+word count analysis indicates that competitiveness is a constantly discussed subject
+within the ASGS, the extent of which is currently comparable to central concepts
+such as \enquote{convergence}, \enquote{growth} or \enquote{employment}.
+
+The encountered ambiguity motivated the analysis of the legally most binding
+parts of the
+Semester, the MIP and SGP. In the MIP, the concept has been translated into
+three concrete headline indicators, which are meant to measure the
+competitiveness of countries. They, in turn, allow for
+the deduction of the underlying theoretical concept that turns out to be
+much more homogeneous than the one confronted with in the (vaguer) ASGSs.
+
+The analysis of these indicators has produced three major insights
+that deserve further attention. As conjectured above they all show a close relation
+to the empirical results found in the literature on European
+socio-economic polarization
+that diagnose a conflict between the central promise of economic convergence
+and competition between Member States.
+First, the indicators used in the MIP are mainly meant to
+measure \emph{cost} competitiveness. There are no indicators concerned with \emph{technological}
+competitiveness present in the MIP, suggesting a constriction of
+the concept that deserves to be subject of closer inspection.
+This is particularly relevant since earlier, as well as more recent results from
+the polarization literature highlight the relevance of \emph{technological}
+rather than \emph{cost} competitiveness
+\citep[e.g.][]{Carlin.2001, Storm.2015jsi, Dosi.2015, Kapeller:2019cds}.
+\emph{Technological} competitiveness is the main determinant of
+the success on international markets for more advanced economies. At the same time,
+the lack thereof in poorer periphery countries is at the root of current polarization
+tendencies \citep[e.g.][]{Graebner.2020u}. Therefore, the absence of a measurement for
+technological competitiveness is problematic, at least given the goal of the EU to
+foster convergence among Member States.
+
+Second, the indicators used in the MIP tend to place competition \emph{between}
+Member States at center stage;
+they do not measure how individual countries contribute to the competitiveness
+of the EU \emph{as a whole}, but rather how their own competitiveness changes over
+time. This points to an inconsistency with the alleged goal of the more
+general strategy papers such as the Lisbon Strategy, where the main concern is to
+enhance the competitiveness of Europe \emph{as a whole} and, more fundamentally, with
+the promise of the EU to achieve a convergence of living standards among
+its Member States -- a topic that is at least as important in the yearly ASGS
+as is competitiveness.
+In practice it means that beggar-thy-neighbor policies, which may help to increase the
+competitiveness of a single Member State at the expense of the others, are not
+desirable from this general viewpoint, but they can improve the assessment of
+a country within the MIP.
+Of course, one might argue that the competitiveness of the European Union as a
+whole is nothing but the sum of the competitiveness scores of its members,
+and that the individualistic incentives currently in place actually are
+fostering overall competitiveness as well.
+However, there are dilemma-like situations where overall cooperation
+and coordination among Member States would be preferable as compared to a state
+where each country maximizes its own competitiveness.
+Collecting corporate taxes or ensuring ecological production standards are only
+two of the most prominent examples in this regard.
+This second insight emphasizes the potential of the indicators to foster divergence
+since competition \emph{between} countries in the EU is a
+main driver of the current polarization patterns \citep[e.g.][]{Kapeller:2019cds}.
+
+Third, existing indicators focus on \emph{changes} in the
+competitiveness of countries rather than their levels relative to others. This is potentially
+problematic since it shallows the obvious heterogeneity of countries. The
+literature on comparative economic development has found that
+\emph{absolute differences} of competitiveness across countries are one important reason for the
+accelerating polarization between core and periphery countries in the EU
+\citep[e.g.][]{Graebner.2020u}. The current measurement is inapt to reflect these difference.
+However, if the central policy coordination mechanism of the EU does not
+measure the present heterogeneity, it is less likely to become addressed by adequate
+policies.
+Rather, in order to put the persistent differentials in levels of competitiveness on
+the agenda, they have to be highlighted by the relevant indicators.
+A consideration of such indicators, such as the ECI used above, would point
+to the fact that not only considerable differences exist, but also that
+without addressing these differences the political promise of the EU to foster
+social convergence becomes ever more difficult to achieve.
+What is needed is a strategy geared
+towards improving the competitiveness
+of the currently least competitive countries in the EU -- at least if one wishes
+to realize the original convergence promise of the European Union.
+
+In all, \enquote{competitiveness} is a theoretically diverse, malleable and
+contested concept, with a close connection to the problem of economic
+convergence.
+The present analysis has focused on the translation of such a contested theoretical
+concept to a set of quantitative indicators in the European Semester, and has
+highlighted several aspects that warrant further attention.
+This has provided a glimpse on the numerous implicit assumptions that enter the
+operationalization of competitiveness, but also
+highlighted the powerful implications different approaches to its measurement have,
+especially with regard to the topic of economic polarization within Europe.
+
+\section*{Acknowledgements}
+The paper was presented at the ICAE Research Seminar in April 2021 as well as the Annual Conference of the European Association for Evolutionary Political Economy (EAEPE) in 2021. We thank all participants for their useful comments. Moreover, we would like to acknowledge the most useful comments of Matthias Aistleitner, Carina Altreiter, Susanna Azevedo, Jonathan Barth, Jakob Hafele, Katrin Hirte, Anna Hornykewycz, Raphaela Kohout, Sarah Kumnig, Katharina Litschauer, Laura Porak, Johanna Rath, Ana Rogojanu and Georg Wolfmayr on earlier versions of this paper. We also thank Magdalena Lercher for her excellent research assistance. All remaining errors are our own. 
+The authors acknowledge funding by the 
+Austrian Science Fund (FWF) under grant number ZK 60-G27 and the
+Oesterreichische Nationalbank 
+(Austrian Central Bank, Anniversary Fund, project number: 18144).
+\clearpage
+\bibliography{references}
+
+\end{document}
